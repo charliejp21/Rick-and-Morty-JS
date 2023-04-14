@@ -11,7 +11,7 @@ const DetailId = () =>{
 
         useEffect(() => {
 
-            axios(`https://rickandmortyapi.com/api/character/${detailId}`).then((response) => setCharacter(response.data));
+            axios(`http://localhost:3001/rickandmorty/detail/${detailId}`).then((response) => setCharacter(response.data));
 
         }, []);
 
